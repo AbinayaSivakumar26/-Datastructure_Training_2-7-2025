@@ -1,15 +1,13 @@
-package linked_list;
+package linkedlist;
 class Node
 {
 	int data;
 	Node next;
-	
 	Node(int data)
 	{
 		this.data=data;
 	}
 }
-
 class SinglyLinkedL
 {
 	Node head,tail;
@@ -29,19 +27,16 @@ class SinglyLinkedL
 			tail=n;
 		}
 	}
-	
 	public void Beginning(int data){
 		Node n=new Node(data);
 		n.next=head;
 		head=n;
 	}
-	
 	public void End(int data){
 		Node n=new Node(data);
 		tail.next=n;
 		tail=n;
 	}
-	
 	public void Center(int pos,int data)
 	{
 		Node temp=head;
@@ -50,17 +45,14 @@ class SinglyLinkedL
 			temp=temp.next;
 		}
 		n.next=temp.next;
-		temp.next=n;
-		
+		temp.next=n;	
 	}
-	
 	public void Deletebeginning()
 	{
 		Node temp=head;
 		head=head.next;
 		temp.next=null;
 	}
-	
 	public void DeleteEnd()
 	{
 		Node temp=head;
@@ -71,7 +63,6 @@ class SinglyLinkedL
 		temp.next=null;
 		tail=temp;
 	}
-	
 	public void DeleteAt(int pos)
 	{
 		Node temp=head;
@@ -90,11 +81,8 @@ class SinglyLinkedL
 			temp=temp.next;
 		}
 	}
-	
-	
 }
 public class Singlyll {
-
 	public static void main(String[] args) {
 		SinglyLinkedL l=new SinglyLinkedL();
 		l.insert(10);
@@ -114,7 +102,5 @@ public class Singlyll {
 		//l.DeleteAt(2);
 		l.DeleteAt(2);
 		l.display();
-
 	}
-
 }
