@@ -50,7 +50,7 @@ class queuedemo
 		}
 	}
 	void peek() {
-		System.out.print(a[f]);
+		System.out.print("peek ="+a[f]);
 	}
 }
 public class queue {
