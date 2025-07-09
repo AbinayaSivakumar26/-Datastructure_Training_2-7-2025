@@ -90,16 +90,6 @@ public class Singlyll {
 		l.insert(30);
 		l.insert(40);
 		l.insert(50);
-		//10 20 30 40
-		//0  1  2  3
-		//l.Beginning(5);
-		//l.End(60);
-		//l.Center(2,25);
-		//l.Center(1, 15);
-		
-		//l.Deletebeginning();
-		//l.DeleteEnd();
-		//l.DeleteAt(2);
 		l.DeleteAt(2);
 		l.display();
 	}
